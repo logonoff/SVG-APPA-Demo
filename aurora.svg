@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+    original: https://github.com/Splitwirez/Avalonia-APPA-Demo
+    SVG port: https://github.com/logonoff/SVG-APPA-Demo
+
+     licence: MIT
+-->
+<svg xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 1000 150" width="1000" height="150">
+    <defs>
+        <style>
+            :root {
+                --hue: 150;
+
+                --BaseColor: hsl(var(--hue), 46%, 47%);
+                --GradientAltColor: hsl(var(--hue), 51%, 59%);
+
+                --Hl0x00: hsla(var(--hue), 61%, 71%, 0.0000000000000000);
+                --Hl0x10: hsla(var(--hue), 61%, 71%, 0.0627450980392157);
+                --Hl0x20: hsla(var(--hue), 61%, 71%, 0.1254901960784314);
+                --Hl0x30: hsla(var(--hue), 61%, 71%, 0.1882352941176471);
+                --Hl0x40: hsla(var(--hue), 61%, 71%, 0.2509803921568627);
+                --Hl0x50: hsla(var(--hue), 61%, 71%, 0.3137254901960784);
+                --Hl0x60: hsla(var(--hue), 61%, 71%, 0.3764705882352941);
+                --Hl0x70: hsla(var(--hue), 61%, 71%, 0.4392156862745098);
+                --Hl0x80: hsla(var(--hue), 61%, 71%, 0.5019607843137255);
+                --Hl0x90: hsla(var(--hue), 61%, 71%, 0.5647058823529412);
+                --Hl0xA0: hsla(var(--hue), 61%, 71%, 0.6274509803921569);
+                --Hl0xB0: hsla(var(--hue), 61%, 71%, 0.5647058823529412);
+                --Hl0xC0: hsla(var(--hue), 61%, 71%, 0.7529411764705882);
+                --Hl0xD0: hsla(var(--hue), 61%, 71%, 0.8156862745098039);
+                --Hl0xE0: hsla(var(--hue), 61%, 71%, 0.8784313725490196);
+                --Hl0xF0: hsla(var(--hue), 61%, 71%, 0.9411764705882353);
+
+                --Hl0x7F: hsla(var(--hue), 61%, 71%, 0.4980392156862745);
+                --Hl0xFF: hsla(var(--hue), 61%, 71%, 1.0000000000000000);
+            }
+        </style>
+
+        <linearGradient id="auroraLightsMonoSoft0" x1="0" y1="0" x2="100%" y2="0">
+            <stop offset="0" style="stop-color: var(--Hl0x00)" />
+            <stop offset="50%" style="stop-color: var(--Hl0x50)" />
+            <stop offset="100%" style="stop-color: var(--Hl0x00)" />
+        </linearGradient>
+        <linearGradient id="auroraLightsMonoSoft1" x1="0" y1="0" x2="100%" y2="0">
+            <stop offset="0" style="stop-color: var(--Hl0x00)" />
+            <stop offset="50%" style="stop-color: var(--Hl0x70)" />
+            <stop offset="100%" style="stop-color: var(--Hl0x00)" />
+        </linearGradient>
+        <linearGradient id="auroraLightsMonoSoft2" x1="0" y1="0" x2="100%" y2="0">
+            <stop offset="0" style="stop-color: var(--Hl0x00)" />
+            <stop offset="30%" style="stop-color: var(--Hl0x60)" />
+            <stop offset="70%" style="stop-color: var(--Hl0x70)" />
+            <stop offset="100%" style="stop-color: var(--Hl0x00)" />
+        </linearGradient>
+        <linearGradient id="auroraLightsMonoSoft3" x1="0" y1="0" x2="100%" y2="0">
+            <stop offset="0" style="stop-color: var(--Hl0x00)" />
+            <stop offset="30%" style="stop-color: var(--Hl0x70)" />
+            <stop offset="70%" style="stop-color: var(--Hl0x60)" />
+            <stop offset="100%" style="stop-color: var(--Hl0x00)" />
+        </linearGradient>
+        <linearGradient id="auroraLightsMonoSharp0" x1="0" y1="0" x2="100%" y2="0">
+            <stop offset="0" style="stop-color: var(--Hl0x00)" />
+            <stop offset="10%" style="stop-color: var(--Hl0x10)" />
+            <stop offset="50%" style="stop-color: var(--Hl0x70)" />
+            <stop offset="70%" style="stop-color: var(--Hl0xE0)" />
+            <stop offset="90%" style="stop-color: var(--Hl0x10)" />
+            <stop offset="100%" style="stop-color: var(--Hl0x00)" />
+        </linearGradient>
+        <linearGradient id="auroraLightsMonoSharp1" x1="0" y1="0" x2="100%" y2="0">
+            <stop offset="0" style="stop-color: var(--Hl0x00)" />
+            <stop offset="50%" style="stop-color: var(--Hl0xA0)" />
+            <stop offset="100%" style="stop-color: var(--Hl0x00)" />
+        </linearGradient>
+
+        <linearGradient id="auroraGradient" x1="0" y1="0" x2="0" y2="100%">
+            <stop offset="0%" style="stop-color: var(--BaseColor);" />
+            <stop offset="100%" style="stop-color: var(--GradientAltColor);" />
+        </linearGradient>
+        <linearGradient id="auroraCurtainsPath" x1="0" y1="0" x2="100%" y2="0">
+            <stop offset="0%" style="stop-color: var(--Hl0x00)" />
+            <stop offset="46.2%" style="stop-color: var(--Hl0x60)" />
+            <stop offset="100%" style="stop-color: var(--Hl0xFF)" />
+        </linearGradient>
+        <style>
+            #aurora { transform: translate(0, -50px) } /* move it up a little to avoid cutting off */
+
+            #aurora * { transform-box: fill-box; } /* fixes rotation around center */
+
+            #aurora > g.lights > rect { height: 250px }
+            #aurora > g.lights > rect.small { width: 10px }
+            #aurora > g.lights > rect.medium { width: 20px }
+            #aurora > g.lights > rect.big { width: 40px }
+            #aurora > g.lights > rect.huge { width: 80px }
+            #aurora > g.lights > rect.monoSoft0 { fill: url(#auroraLightsMonoSoft0) }
+            #aurora > g.lights > rect.monoSoft1 { fill: url(#auroraLightsMonoSoft1) }
+            #aurora > g.lights > rect.monoSoft2 { fill: url(#auroraLightsMonoSoft2) }
+            #aurora > g.lights > rect.monoSoft3 { fill: url(#auroraLightsMonoSoft3) }
+
+            #aurora > g.lights > rect.monoSharp0 { fill: url(#auroraLightsMonoSharp0) }
+            #aurora > g.lights > rect.monoSharp1 { fill: url(#auroraLightsMonoSharp1) }
+
+            #aurora > #Curtains { transform: translate(0, 50px) } /* cancel out above one */
+            #aurora > #Curtains path {
+                d: path("M 0,0 C 8,50 10,85 3,135 Z");
+                fill: url(#auroraCurtainsPath);
+            }
+        </style>
+    </defs>
+
+    <rect width="1000" height="150" fill="url(#auroraGradient)" />
+
+    <g id="aurora">
+        <g id="Lm0" class="lights moving">
+            <animateTransform
+                attributeName="transform"
+                attributeType="XML"
+                type="translate"
+                dur="60s"
+                repeatCount="indefinite"
+                values="-700 0; -400 0; -1000 0; -700 0"
+                keyTimes="0; 0.3; 0.7; 1" />
+
+            <animate
+                attributeName="opacity"
+                attributeType="XML"
+                dur="60s"
+                repeatCount="indefinite"
+                keyTimes="0; 0.15; 0.25; 0.75; 0.85; 1"
+                values="0.5; 0.5; 0; 0; 0.5; 0.5" />
+
+            <rect class="big monoSoft1" x="3" transform="rotate(1)" />
+            <rect class="huge monoSoft1" x="101" transform="rotate(-6)" />
+            <rect class="big monoSoft0" x="145" transform="rotate(-10)" />
+            <rect class="small monoSoft2" x="166" transform="rotate(-5)" />
+            <rect class="huge monoSoft2" x="261" transform="rotate(4)" />
+            <rect class="huge monoSoft1" x="348" transform="rotate(9)" />
+            <rect class="huge monoSoft1" x="438" transform="rotate(10)" />
+            <rect class="big monoSoft0" x="484" transform="rotate(10)" />
+            <rect class="big monoSoft1" x="535" transform="rotate(1)" />
+            <rect class="huge monoSoft0" x="625" transform="rotate(1)" />
+            <rect class="big monoSoft2" x="681" transform="rotate(-2)" />
+            <rect class="medium monoSoft2" x="714" transform="rotate(-6)" />
+            <rect class="medium monoSoft2" x="744" transform="rotate(-10)" />
+            <rect class="medium monoSoft0" x="772" transform="rotate(3)" />
+            <rect class="huge monoSoft0" x="867" transform="rotate(10)" />
+            <rect class="medium monoSoft0" x="895" transform="rotate(8)" />
+            <rect class="huge monoSoft1" x="983" transform="rotate(5)" />
+            <rect class="huge monoSoft2" x="1077" transform="rotate(-7)" />
+            <rect class="huge monoSoft0" x="1167" transform="rotate(-10)" />
+            <rect class="medium monoSoft0" x="1196" transform="rotate(2)" />
+            <rect class="huge monoSoft2" x="1288" transform="rotate(8)" />
+            <rect class="huge monoSoft2" x="1369" transform="rotate(10)" />
+            <rect class="huge monoSoft1" x="1450" transform="rotate(-6)" />
+            <rect class="big monoSoft2" x="1504" transform="rotate(-10)" />
+            <rect class="huge monoSoft0" x="1586" transform="rotate(4)" />
+            <rect class="big monoSoft1" x="1633" transform="rotate(9)" />
+            <rect class="huge monoSoft2" x="1724" transform="rotate(9)" />
+            <rect class="medium monoSoft2" x="1758" transform="rotate(10)" />
+            <rect class="huge monoSoft0" x="1840" transform="rotate(8)" />
+            <rect class="big monoSoft0" x="1889" transform="rotate(2)" />
+            <rect class="big monoSoft1" x="1944" transform="rotate(-10)" />
+            <rect class="big monoSoft1" x="1997" transform="rotate(-10)" />
+        </g>
+
+        <g id="Lm1" class="lights moving">
+            <animateTransform
+                attributeName="transform"
+                attributeType="XML"
+                type="translate"
+                dur="60s"
+                repeatCount="indefinite"
+                values="-1000 0; -1000 0; -200 0; -200 0"
+                keyTimes="0; 0.3; 0.7; 1" />
+
+            <animate
+                attributeName="opacity"
+                dur="60s"
+                attributeType="XML"
+                repeatCount="indefinite"
+                keyTimes="0; 0.10; 0.20; 0.70; 0.80; 1"
+                values="0; 0; 0.5; 0.5; 0; 0" />
+
+            <rect class="big monoSoft2" x="3" transform="rotate(-3)" />
+            <rect class="big monoSoft1" x="52" transform="rotate(-3)" />
+            <rect class="big monoSoft1" x="99" transform="rotate(-10)" />
+            <rect class="huge monoSoft1" x="192" transform="rotate(4)" />
+            <rect class="huge monoSoft1" x="281" transform="rotate(10)" />
+            <rect class="huge monoSoft1" x="377" transform="rotate(0)" />
+            <rect class="medium monoSoft1" x="404" transform="rotate(-9)" />
+            <rect class="huge monoSoft2" x="487" transform="rotate(-10)" />
+            <rect class="huge monoSoft1" x="585" transform="rotate(-4)" />
+            <rect class="small monoSoft0" x="603" transform="rotate(7)" />
+            <rect class="huge monoSoft2" x="696" transform="rotate(10)" />
+            <rect class="huge monoSoft2" x="779" transform="rotate(-4)" />
+            <rect class="huge monoSoft0" x="862" transform="rotate(-5)" />
+            <rect class="small monoSoft0" x="884" transform="rotate(-10)" />
+            <rect class="big monoSoft2" x="927" transform="rotate(5)" />
+            <rect class="huge monoSoft2" x="1008" transform="rotate(10)" />
+            <rect class="medium monoSoft1" x="1034" transform="rotate(10)" />
+            <rect class="huge monoSoft1" x="1130" transform="rotate(4)" />
+            <rect class="big monoSharp0" x="1186" transform="rotate(-8)" />
+            <rect class="big monoSoft2" x="1230" transform="rotate(-10)" />
+            <rect class="medium monoSoft2" x="1261" transform="rotate(-8)" />
+            <rect class="huge monoSoft2" x="1355" transform="rotate(3)" />
+            <rect class="big monoSharp0" x="1402" transform="rotate(10)" />
+            <rect class="big monoSharp0" x="1446" transform="rotate(2)" />
+            <rect class="medium monoSoft1" x="1473" transform="rotate(-4)" />
+            <rect class="big monoSoft2" x="1526" transform="rotate(-10)" />
+            <rect class="huge monoSoft2" x="1620" transform="rotate(4)" />
+            <rect class="huge monoSoft0" x="1717" transform="rotate(7)" />
+            <rect class="huge monoSoft2" x="1799" transform="rotate(10)" />
+            <rect class="big monoSoft0" x="1842" transform="rotate(-2)" />
+            <rect class="huge monoSoft2" x="1934" transform="rotate(-7)" />
+        </g>
+
+        <g id="Lm2" class="lights moving">
+            <animateTransform
+                attributeName="transform"
+                attributeType="XML"
+                type="translate"
+                dur="60s"
+                repeatCount="indefinite"
+                values="-1000 0; 0 0" />
+
+            <animate
+                attributeName="opacity"
+                attributeType="XML"
+                dur="60s"
+                repeatCount="indefinite"
+                keyTimes="0; 0.5; 0.6; 0.9; 1"
+                values="0; 0; 0.5; 0.5; 0" />
+
+            <rect class="big monoSoft1" x="-7" transform="rotate(5)" />
+            <rect class="small monoSoft2" x="12" transform="rotate(0)" />
+            <rect class="huge monoSoft0" x="108" transform="rotate(-10)" />
+            <rect class="medium monoSoft1" x="140" transform="rotate(-8)" />
+            <rect class="big monoSoft1" x="190" transform="rotate(7)" />
+            <rect class="medium monoSharp0" x="216" transform="rotate(10)" />
+            <rect class="huge monoSoft0" x="300" transform="rotate(2)" />
+            <rect class="medium monoSoft1" x="327" transform="rotate(-6)" />
+            <rect class="small monoSoft0" x="346" transform="rotate(-10)" />
+            <rect class="big monoSoft2" x="397" transform="rotate(1)" />
+            <rect class="medium monoSoft1" x="429" transform="rotate(4)" />
+            <rect class="huge monoSoft1" x="522" transform="rotate(10)" />
+            <rect class="huge monoSoft1" x="618" transform="rotate(10)" />
+            <rect class="big monoSoft1" x="666" transform="rotate(7)" />
+            <rect class="huge monoSoft1" x="752" transform="rotate(5)" />
+            <rect class="medium monoSoft1" x="778" transform="rotate(-10)" />
+            <rect class="huge monoSoft1" x="865" transform="rotate(2)" />
+            <rect class="big monoSoft2" x="920" transform="rotate(1)" />
+            <rect class="huge monoSoft0" x="1011" transform="rotate(10)" />
+            <rect class="medium monoSoft0" x="1040" transform="rotate(6)" />
+            <rect class="big monoSoft0" x="1095" transform="rotate(-3)" />
+            <rect class="huge monoSoft1" x="1193" transform="rotate(-3)" />
+            <rect class="big monoSharp0" x="1245" transform="rotate(-8)" />
+            <rect class="huge monoSoft2" x="1326" transform="rotate(-10)" />
+            <rect class="big monoSoft2" x="1372" transform="rotate(4)" />
+            <rect class="big monoSoft2" x="1423" transform="rotate(2)" />
+            <rect class="big monoSoft0" x="1472" transform="rotate(10)" />
+            <rect class="big monoSoft0" x="1528" transform="rotate(4)" />
+            <rect class="big monoSoft0" x="1584" transform="rotate(-10)" />
+            <rect class="huge monoSoft1" x="1681" transform="rotate(-4)" />
+            <rect class="small monoSoft1" x="1703" transform="rotate(10)" />
+            <rect class="small monoSoft1" x="1725" transform="rotate(-5)" />
+            <rect class="big monoSoft0" x="1781" transform="rotate(-10)" />
+            <rect class="huge monoSoft1" x="1863" transform="rotate(3)" />
+            <rect class="huge monoSoft0" x="1952" transform="rotate(10)" />
+            <rect class="big monoSoft2" x="1997" transform="rotate(0)" />
+        </g>
+
+        <g id="Curtains">
+            <path id="C0">
+                <animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="translate"
+                    dur="3s"
+                    repeatCount="indefinite"
+                    values="121.1 0;178.7 0"
+                    keyTimes="0;1" />
+                <animate
+                    attributeName="opacity"
+                    attributeType="XML"
+                    dur="3s"
+                    repeatCount="indefinite"
+                    values="0;1;1;0"
+                    keyTimes="0;0.25;0.75;1" />
+            </path>
+            <g transform="rotate(-5)">
+                <path id="C1">
+                    <animateTransform
+                        attributeName="transform"
+                        attributeType="XML"
+                        type="translate"
+                        dur="6s"
+                        repeatCount="indefinite"
+                        values="149 0;194.1 0"
+                        keyTimes="0;1" />
+                    <animate
+                        attributeName="opacity"
+                        attributeType="XML"
+                        dur="6s"
+                        repeatCount="indefinite"
+                        values="0;1;1;0"
+                        keyTimes="0;0.25;0.75;1" />
+                </path>
+            </g>
+            <g transform="rotate(-10)">
+                <path id="C2">
+                    <animateTransform
+                        attributeName="transform"
+                        attributeType="XML"
+                        type="translate"
+                        dur="4s"
+                        repeatCount="indefinite"
+                        values="209.3 0;253 0"
+                        keyTimes="0;1" />
+                    <animate
+                        attributeName="opacity"
+                        attributeType="XML"
+                        dur="4s"
+                        repeatCount="indefinite"
+                        values="0;1;1;0"
+                        keyTimes="0;0.25;0.75;1" />
+                </path>
+            </g>
+            <g transform="rotate(8)">
+                <path id="C3">
+                    <animateTransform
+                        attributeName="transform"
+                        attributeType="XML"
+                        type="translate"
+                        dur="5s"
+                        repeatCount="indefinite"
+                        values="828.1 0;884.7 0"
+                        keyTimes="0;1" />
+                    <animate
+                        attributeName="opacity"
+                        dur="5s"
+                        repeatCount="indefinite"
+                        values="0;1;1;0"
+                        keyTimes="0;0.25;0.75;1" />
+                </path>
+            </g>
+            <g transform="rotate(16)">
+                <path id="C4">
+                    <animateTransform
+                        attributeName="transform"
+                        attributeType="XML"
+                        type="translate"
+                        dur="8s"
+                        repeatCount="indefinite"
+                        values="841 0;913.4 0"
+                        keyTimes="0;1" />
+                    <animate
+                        attributeName="opacity"
+                        attributeType="XML"
+                        dur="8s"
+                        repeatCount="indefinite"
+                        values="0;1;1;0"
+                        keyTimes="0;0.25;0.75;1" />
+                </path>
+            </g>
+        </g>
+    </g>
+</svg>
