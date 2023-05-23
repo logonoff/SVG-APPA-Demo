@@ -1,4 +1,4 @@
-# Avalonia-APPA-Demo
+# SVG-APPA-Demo
 Custom (Windows Longhorn Aero) aurora like it's 2004. XAML is original, not taken from Longhorn.
 
 https://user-images.githubusercontent.com/34009058/140614334-b4c0a6ba-7152-4097-bcbb-8c011786bcf1.mp4
